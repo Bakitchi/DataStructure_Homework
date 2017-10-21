@@ -1,0 +1,171 @@
+//测试类
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.Font;
+import javax.swing.JLabel;
+import javax.swing.JTextArea;
+import javax.swing.border.EmptyBorder;
+import java.awt.EventQueue;
+public class Test extends JFrame{
+	JPanel TestPane;
+	OpenHashing oh;
+	
+	//代换变量名与数值
+	String change(String s) {
+		for (int i = 0; i <26; i++) {
+			for(oh.HashList[i].setFirst();oh.HashList[i].isInList();oh.HashList[i].setNext()) {
+				s = s.replace((String)oh.HashList[i].getItem(),(String)oh.HashList[i].getValue());
+			}
+		}
+		return s;
+	}
+	
+	void explainer(String s, JTextArea text) {
+		//分割字符串
+		String[] line_item = s.split("\n");
+		for (int i = 0; i < line_item.length; i++) {
+			String[] space_item = line_item[i].split(" ");
+			//关键字处理
+			if(space_item[0].equals("ASSIGN")) {
+				if(oh.Hash(space_item[1]) == null) {
+					String v = space_item[2];
+					v = change(v);
+					Calculate c = new Calculate();
+					v = c.Cal(v+"=");
+					Node n = oh.add(space_item[1]);
+					n.setValue(v);
+					text.append("Assigning " + v + " to " + space_item[1] + "\n");
+				}else {
+					Node n = oh.Hash(space_item[1]);
+					Calculate c = new Calculate();
+					String v = space_item[2];
+					v = change(v);
+					v = c.Cal(v+"=");
+					n.setValue(v);
+					text.append("Assigning " + v + " to " + space_item[1] + "\n");
+				}
+				//定义函数
+			}else if(space_item[0].equals("DEFINE")) {
+				text.append("Defining " + space_item[1] + "\n");
+				Node n = oh.add(space_item[1]);//存入函数名
+				//读取函数体
+				i++;
+				//保存函数体
+				space_item = line_item[i].split(" ");
+				String f = "";
+				while(!(space_item[0].equals("END"))) {
+					f = f + line_item[i] + "\n";
+					i++;
+					space_item = line_item[i].split(" ");
+				}
+				n.setValue(f);
+			}else if(space_item[0].equals("CALL")) {
+				text.append("Calling " + space_item[1] +"\n");
+				explainer((String) (oh.Hash(space_item[1]).value), text);
+			}else if(space_item[0].equals("FOR")) {
+				Calculate c = new Calculate();
+				String v = space_item[1];
+				v = change(v);
+				v = c.Cal(v + "=");
+				int count = Integer.parseInt(v);
+				for (int j = 0; j < count; j++) {
+					if(space_item[2].equals("ASSIGN")) {
+						if(oh.Hash(space_item[3]) == null){
+							Calculate c2 = new Calculate();
+							String v2 = space_item[4];
+							v2 = change(v2);
+							v2 = c2.Cal(v2+"=");
+							Node n = oh.add(space_item[3]);
+							n.setValue(v2);
+							if(j == count-1)
+								text.append("Assigning " + v2 + " to " + space_item[3] + "\n");
+						}else {
+							Node n = oh.Hash(space_item[3]);
+							Calculate c2 = new Calculate();
+							String v2 = space_item[4];
+							v2 = change(v2);
+							v2 = c2.Cal(v2+"=");
+							n.setValue(v2);
+							System.out.println(v2);
+							if(j == count-1)
+								text.append("Assigning " + v2 + " to " + space_item[3] + "\n");
+						}
+					}else if(space_item[2].equals("CALL")){
+						text.append("Calling "+space_item[3]+"\n");
+						explainer(((String) (oh.Hash(space_item[3])).value), text);
+					}
+					
+				}
+			}
+		}
+	}
+	
+	//构造函数
+	Test(){
+		setTitle("\u5FAE\u578B\u89E3\u91CA\u5668");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 996, 748);
+		TestPane = new JPanel();
+		TestPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(TestPane);
+		TestPane.setLayout(null);
+
+		JTextArea textArea = new JTextArea();
+		textArea.setFont(new Font("Monospaced", Font.PLAIN, 20));
+		textArea.setBounds(0, 30, 410, 671);
+		TestPane.add(textArea);
+
+		JTextArea textArea_1 = new JTextArea();
+		textArea_1.setFont(new Font("Monospaced", Font.PLAIN, 20));
+		textArea_1.setBounds(503, 30, 380, 671);
+		TestPane.add(textArea_1);
+
+		JButton btnNewButton = new JButton("\u5F00\u59CB\u89E3\u91CA");
+		btnNewButton.setFont(new Font("宋体", Font.PLAIN, 13));
+		
+		btnNewButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				textArea_1.setText("");
+				oh = new OpenHashing();// 初始化哈希表
+				explainer(textArea.getText(), textArea_1);// 开始代码解释
+			}
+		});
+		
+		btnNewButton.setBounds(880, 13, 98, 42);
+		TestPane.add(btnNewButton);
+
+		JLabel label = new JLabel("\u539F\u7A0B\u5E8F");
+		label.setBounds(0, 12, 335, 18);
+		TestPane.add(label);
+
+		JLabel label_1 = new JLabel("\u89E3\u91CA\u7A0B\u5E8F");
+		label_1.setBounds(514, 6, 335, 18);
+		TestPane.add(label_1);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args){
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Test frame = new Test();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+}

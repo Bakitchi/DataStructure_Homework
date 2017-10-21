@@ -1,0 +1,221 @@
+﻿CodeName:Mozilla
+MinorVersion:undefined
+AppName:Netscape
+appVersion:5.0 (Windows NT 5.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1
+javaEnabled:function javaEnabled() { [native code] }
+vendor:Google Inc.
+UA:Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1
+Platform:Win32
+OnLine:true
+PluginNum:19
+Language:zh-CN
+mimeTypes:[object MimeTypeArray]
+Product:Gecko
+ProductSub:20030107
+UsingCookie:true
+Screen resolution:1280*1024
+ColorDepth:32
+DeviceXDPI:undefined
+Flash Plugin: 11.5 r502
+refer:192.168.1.100:8080/WebDataTest3/DataServlet
+
+browser fingerprint with default settings (canvas, screen resolutin, activeX disabled:   2537374677
+browser fingerprint with canvas enabled:   4196610124
+browser fingerprint with ie_activex enabled:   2537374677
+browser fingerprint with screen_resolution enabled:   2266051614
+
+login mousemove 574 462 1476698283466
+login mousemove 574 462 1476698283466
+login mousemove 574 461 1476698283483
+login mousemove 578 457 1476698283494
+login mousemove 587 451 1476698283504
+login mousemove 594 444 1476698283565
+login mousemove 617 418 1476698283567
+login mousemove 620 415 1476698283569
+login mousemove 621 413 1476698283580
+login mousemove 622 412 1476698283590
+login mousemove 625 409 1476698283601
+login mousemove 625 407 1476698283612
+login mousemove 625 405 1476698283623
+login mousemove 626 405 1476698283633
+login mousemove 626 404 1476698283644
+login mousemove 626 403 1476698283655
+login mousemove 627 402 1476698283676
+login mousemove 627 401 1476698283707
+login mousemove 628 401 1476698283728
+login mousemove 628 399 1476698283779
+login mousemove 628 398 1476698283800
+login mousemove 630 396 1476698283811
+login mousemove 632 394 1476698283822
+login mousemove 635 390 1476698283832
+login mousemove 638 386 1476698283843
+login mousemove 641 382 1476698283854
+login mousemove 642 381 1476698283865
+login mousemove 644 379 1476698283875
+login mousemove 644 378 1476698283886
+login mousemove 647 375 1476698283897
+login mousemove 648 373 1476698283908
+login mousemove 649 371 1476698283918
+login mousemove 651 369 1476698283929
+login mousemove 651 368 1476698283940
+login mousemove 651 367 1476698283951
+login mousedown 651 367 1476698284081
+login mousemove 651 367 1476698284083
+login mouseup 651 367 1476698284181
+login mousemove 651 367 1476698284181
+login keydown 98 1476698285308
+login keyUp 98 1476698285395
+login keydown 97 1476698285514
+login keyUp 97 1476698285601
+login keydown 101 1476698285701
+login keyUp 101 1476698285780
+login keydown 96 1476698285915
+login keyUp 96 1476698285995
+login keydown 101 1476698286106
+login keyUp 101 1476698286187
+login keydown 96 1476698286664
+login keyUp 96 1476698286734
+login keydown 100 1476698286865
+login keyUp 100 1476698286944
+login keydown 96 1476698287096
+login keyUp 96 1476698287166
+login keydown 96 1476698287249
+login keyUp 96 1476698287326
+login keydown 102 1476698287451
+login keyUp 102 1476698287518
+login mousemove 651 368 1476698288086
+login mousemove 651 370 1476698288108
+login mousemove 651 373 1476698288119
+login mousemove 651 378 1476698288129
+login mousemove 651 384 1476698288140
+login mousemove 653 390 1476698288151
+login mousemove 654 397 1476698288162
+login mousemove 654 401 1476698288172
+login mousemove 654 403 1476698288183
+login mousemove 654 407 1476698288194
+login mousemove 654 409 1476698288205
+login mousemove 654 411 1476698288215
+login mousemove 655 413 1476698288226
+login mousemove 655 416 1476698288237
+login mousemove 655 418 1476698288248
+login mousemove 655 419 1476698288258
+login mousemove 655 420 1476698288269
+login mousemove 655 422 1476698288300
+login mousemove 655 425 1476698288311
+login mousemove 655 430 1476698288322
+login mousemove 655 436 1476698288332
+login mousemove 654 439 1476698288343
+login mousemove 653 439 1476698288354
+login mousemove 653 440 1476698288365
+login mousedown 653 440 1476698288535
+login mouseup 653 440 1476698288605
+login mousemove 653 440 1476698288606
+login keydown 65 1476698289234
+login keyUp 65 1476698289349
+login keydown 66 1476698289376
+login keyUp 66 1476698289509
+login keydown 73 1476698289534
+login keydown 78 1476698289676
+login keyUp 73 1476698289759
+login keyUp 78 1476698289804
+login keydown 97 1476698290201
+login keyUp 97 1476698290274
+login keydown 97 1476698290348
+login keyUp 97 1476698290432
+login keydown 96 1476698290554
+login keyUp 96 1476698290645
+login keydown 100 1476698290749
+login keyUp 100 1476698290823
+login mousemove 665 427 1476698291160
+login mousemove 699 409 1476698291170
+login mousemove 733 395 1476698291181
+login mousemove 751 387 1476698291192
+login mousemove 755 386 1476698291203
+login mousemove 754 386 1476698291353
+login mousemove 750 387 1476698291363
+login mousemove 747 389 1476698291374
+login mousemove 740 394 1476698291384
+login mousemove 728 403 1476698291395
+login mousemove 715 410 1476698291406
+login mousemove 704 416 1476698291416
+login mousemove 694 422 1476698291427
+login mousemove 683 428 1476698291438
+login mousemove 671 434 1476698291449
+login mousemove 662 438 1476698291459
+login mousemove 655 441 1476698291470
+login mousemove 647 442 1476698291481
+login mousemove 642 443 1476698291492
+login mousemove 640 443 1476698291502
+login mousemove 638 443 1476698291513
+login mousemove 633 444 1476698291524
+login mousemove 627 445 1476698291535
+login mousemove 621 449 1476698291545
+login mousemove 614 451 1476698291556
+login mousemove 608 455 1476698291567
+login mousemove 602 457 1476698291578
+login mousemove 599 459 1476698291588
+login mousemove 597 460 1476698291599
+login mousemove 596 460 1476698291610
+login mousemove 595 462 1476698291621
+login mousemove 593 464 1476698291631
+login mousemove 591 469 1476698291642
+login mousemove 588 475 1476698291653
+login mousemove 584 482 1476698291664
+login mousemove 581 486 1476698291674
+login mousemove 577 490 1476698291685
+login mousemove 575 492 1476698291696
+login mousemove 573 493 1476698291707
+login mousemove 572 495 1476698291717
+login mousemove 570 496 1476698291728
+login mousemove 568 498 1476698291739
+login mousemove 565 499 1476698291749
+login mousemove 565 500 1476698291760
+login mousemove 564 501 1476698291771
+login mousedown 564 501 1476698291920
+login mousemove 564 501 1476698291924
+login mouseup 564 501 1476698292001
+login mousemove 564 501 1476698292001
+login keydown 78 1476698293344
+login keyUp 78 1476698293460
+login keydown 66 1476698293635
+login keyUp 66 1476698293788
+login keydown 90 1476698294449
+login keyUp 90 1476698294534
+login keydown 105 1476698294620
+login keyUp 105 1476698294735
+login mousemove 565 501 1476698295390
+login mousemove 570 502 1476698295401
+login mousemove 574 505 1476698295412
+login mousemove 574 506 1476698295422
+login mousemove 574 508 1476698295433
+login mousemove 574 511 1476698295444
+login mousemove 574 512 1476698295455
+login mousemove 574 513 1476698295504
+login mousemove 574 515 1476698295515
+login mousemove 575 516 1476698295526
+login mousemove 576 517 1476698295547
+login mousemove 577 518 1476698295558
+login mousemove 578 519 1476698295569
+login mousemove 578 520 1476698295580
+login mousemove 579 521 1476698295590
+login mousemove 579 522 1476698295601
+login mousemove 579 523 1476698295612
+login mousemove 579 525 1476698295623
+login mousemove 581 527 1476698295633
+login mousemove 582 529 1476698295644
+login mousemove 583 531 1476698295655
+login mousemove 584 533 1476698295665
+login mousemove 586 536 1476698295676
+login mousemove 586 537 1476698295687
+login mousemove 586 538 1476698295698
+login mousemove 586 539 1476698295838
+login mousemove 587 539 1476698295889
+login mousemove 588 539 1476698295900
+login mousemove 590 539 1476698295911
+login mousemove 591 540 1476698295921
+login mousemove 592 540 1476698295932
+login mousemove 593 541 1476698295943
+login mousemove 594 542 1476698296073
+login mousedown 594 542 1476698296143
+login mouseup 594 542 1476698296244
+login mouseup 594 542 1476698296244
